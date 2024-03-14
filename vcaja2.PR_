@@ -1,0 +1,26 @@
+** programa que modifica el valor del campo tipo para V colocando V1 O V3 segun corresponda
+** TENER ABIERTA LA TABLA VCAJA2
+
+IF NOT USED('vcaja2')
+	MESSAGEBOX('Abrir la vista VCAJA2')
+	RETURN 
+ENDIF 
+
+SET FILTER TO 'V' $ TIPO AND NOT 'CUOTA' $ UPPER(descripcio) AND NOT 'ANTICIPO'$ UPPER(descripcio) AND IDCPRA_VTA > 0
+SELECT vcaja2 
+
+GO top
+SCAN 
+	replace tipo WITH 'V1' 
+	= TABLEUPDATE(.t.,.t.,'vcaja2')
+ENDSCAN 
+
+
+SET FILTER TO 'V' $ TIPO AND ('CUOTA' $ UPPER(descripcio) or 'ANTICIPO'$ UPPER(descripcio)) AND IDCPRA_VTA > 0
+SELECT vcaja2 
+
+GO top
+SCAN 
+	replace tipo WITH 'V3' 
+	= TABLEUPDATE(.t.,.t.,'vcaja2')
+ENDSCAN 
