@@ -10,3 +10,9 @@
 *.DLL
 *.ERR
 *.err
+*.EXE
+*.exe
+foxuser.dbf
+FOXUSER.DBF
+FOXUSER.FPT
+foxuser.fpt
