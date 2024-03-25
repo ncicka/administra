@@ -1,6 +1,6 @@
 *       *********************************************************
 *       *                                                         
-*       * 13/03/2024            MANEJA.MPR              02:03:04  
+*       * 23/03/2024            MANEJA.MPR              17:49:48  
 *       *                                                         
 *       *********************************************************
 *       *                                                         
@@ -115,9 +115,9 @@ DEFINE PAD _1m91b47e5 OF _MSYSMENU PROMPT "\<Ventas" COLOR SCHEME 3 ;
 DEFINE PAD _1m91b47e6 OF _MSYSMENU PROMPT "\<Compras" COLOR SCHEME 3 ;
 	KEY ALT+C, "" ;
 	SKIP FOR _SCREEN.sistk=0 
-DEFINE PAD _6up04e9rg OF _MSYSMENU PROMPT "Ca\<ja" COLOR SCHEME 3 ;
+DEFINE PAD _6uz127rv2 OF _MSYSMENU PROMPT "Ca\<ja" COLOR SCHEME 3 ;
 	KEY ALT+J, ""
-DEFINE PAD _6up04e9rh OF _MSYSMENU PROMPT "S\<tock" COLOR SCHEME 3 ;
+DEFINE PAD _6uz127rv3 OF _MSYSMENU PROMPT "S\<tock" COLOR SCHEME 3 ;
 	KEY ALT+T, ""
 DEFINE PAD _1m91b47e7 OF _MSYSMENU PROMPT "\<Listados" COLOR SCHEME 3 ;
 	KEY ALT+L, ""
@@ -130,8 +130,8 @@ DEFINE PAD _1m91b47eb OF _MSYSMENU PROMPT "\<Salir" COLOR SCHEME 3 ;
 ON PAD _1m91b47e4 OF _MSYSMENU ACTIVATE POPUP actualizac
 ON PAD _1m91b47e5 OF _MSYSMENU ACTIVATE POPUP ventas
 ON PAD _1m91b47e6 OF _MSYSMENU ACTIVATE POPUP compras
-ON PAD _6up04e9rg OF _MSYSMENU ACTIVATE POPUP caja
-ON PAD _6up04e9rh OF _MSYSMENU ACTIVATE POPUP stock
+ON PAD _6uz127rv2 OF _MSYSMENU ACTIVATE POPUP caja
+ON PAD _6uz127rv3 OF _MSYSMENU ACTIVATE POPUP stock
 ON PAD _1m91b47e7 OF _MSYSMENU ACTIVATE POPUP listados
 ON PAD _1m91b47e8 OF _MSYSMENU ACTIVATE POPUP informes
 ON PAD _1m91b47e9 OF _MSYSMENU ACTIVATE POPUP mantenimie
